@@ -1,0 +1,39 @@
+.modal {
+	position: absolute;
+	top: 70px;
+	right: 150px;
+	width: 400px;
+	background-color: #000;
+	border-radius: 15px;
+	z-index: 1;
+	overflow: auto;
+   h3{
+      display: flex;
+      justify-content: center;
+   }
+	&_line {
+		border-bottom: 1px solid #ffffff;
+		margin: 20px 0;
+	}
+	&_inner {
+		padding: 40px;
+	}
+
+	&_empty {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&_order {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	p,
+	button {
+		font-size: 15px;
+		font-weight: bold;
+	}
+}

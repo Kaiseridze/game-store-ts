@@ -1,0 +1,48 @@
+.game_item {
+	text-decoration: none;
+	color: white;
+	min-height: 200px;
+	min-width: 500px;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: rgb(36, 37, 41);
+	border-radius: 15px;
+	cursor: pointer;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+		margin-right: 20px;
+	}
+
+	&--details {
+		padding: 18px 20px;
+	}
+
+	&--cover{
+		height: 300px;
+		width: 100%;
+		background-size: cover;
+		background-position: center;
+		border-radius: 15px 15px 0 0;
+	}
+
+	&--title {
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	&--price {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&--buyblock{
+		margin-top: 20px;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		button{
+			margin-left: 10px;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	background: rgb(49, 47, 47);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #ffffff;
+}
+
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+a{
+	text-decoration: none;
+   color: white;
+}
+.main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.game_description{
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	p{
+		font-size: 20px;
+		font-weight: bold;
+		margin-left: 20px;
+	}
+}
+
+
+.order{
+	&_error{
+		display: flex;
+		justify-content: center;
+	}
+	&_controller{
+		display: flex;
+		flex-direction: column;
+	}
+	button{
+		padding: 10px 5px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}
