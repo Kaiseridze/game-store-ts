@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import './Button.scss'
 
 interface IButton {
-	onClick: React.MouseEventHandler
+	onClick?: React.MouseEventHandler
 	children: React.ReactNode | any
 	className: string
 }

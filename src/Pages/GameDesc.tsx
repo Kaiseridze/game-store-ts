@@ -16,9 +16,8 @@ function GameDesc() {
 			<div className='game_description'>
 				<div className='game_description--left'>
 					<h1>{gameDescription.title}</h1>
-					<iframe
-						width='800px'
-						height='400px'
+					<iframe className="game_description--video"
+
 						title='Youtube Video Player'
 						src={gameDescription.video}></iframe>
 				</div>

@@ -4,6 +4,10 @@
 	align-items: center;
 	padding: 10px 20px;
    position: relative;
+
+   @media  (max-width: 290px) {
+      padding: 0
+	}
    &_items{
       display: flex;
       align-items: center;

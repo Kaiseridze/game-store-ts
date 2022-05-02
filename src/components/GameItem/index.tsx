@@ -4,7 +4,7 @@ import Button from "../Button"
 import { useDispatch } from "react-redux"
 import { setGameToCart, deleteGameFromCart } from "../../store/cart/reducer"
 import { setCurrentGame } from "../../store/game/reducer"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 import "./GameItem.scss"
 import { useTypedSelector } from "../../hooks/useTypedSelector"

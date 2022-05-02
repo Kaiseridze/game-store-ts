@@ -33,6 +33,26 @@ a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 950px) {
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+
+	&--video{
+		width: 800px;
+		height: 400px;
+		@media (max-width: 750px) {
+
+			width: 400px;
+			height: 200px;
+			padding: 0
+		}
+		@media (max-width: 400px) {
+			width: 300px;
+			height: 150px;
+		}
+	}
 	p{
 		font-size: 20px;
 		font-weight: bold;
@@ -48,11 +68,23 @@ a{
 	}
 	&_controller{
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
 	}
 	button{
-		padding: 10px 5px;
 		font-size: 20px;
 		font-weight: bold;
+	}
+}
+
+.success{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	button{
+		font-size: 15px;
+		font-weight: bold;
+		
 	}
 }

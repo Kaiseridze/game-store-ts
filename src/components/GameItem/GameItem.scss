@@ -1,48 +1,58 @@
 .game_item {
-	text-decoration: none;
-	color: white;
-	min-height: 200px;
-	min-width: 500px;
-	display: flex;
-	flex-flow: column wrap;
-	background-color: rgb(36, 37, 41);
-	border-radius: 15px;
-	cursor: pointer;
-	position: relative;
+  text-decoration: none;
+  color: white;
+  min-height: 200px;
+  min-width: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(36, 37, 41);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  @media (max-width: 624px) {
+    min-width: 300px;
+  }
 
-	&:not(:last-child) {
-		margin-bottom: 30px;
-		margin-right: 20px;
-	}
+  &:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 20px;
+  }
 
-	&--details {
-		padding: 18px 20px;
-	}
-
-	&--cover{
-		height: 300px;
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-		border-radius: 15px 15px 0 0;
-	}
-
-	&--title {
-		font-size: 18px;
-		font-weight: bold;
-	}
-
-	&--price {
+  &--details {
+    padding: 18px 20px;
+	@media (max-width: 381px) {
 		display: flex;
-		flex-wrap: wrap;
-	}
-	&--buyblock{
-		margin-top: 20px;
-		display: flex;
-		justify-content: flex-end;
+		/* justify-items: center; */
+		flex-direction: column;
+		align-content: space-between;
 		align-items: center;
-		button{
-			margin-left: 10px;
-		}
 	}
+  }
+
+  &--cover {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+  }
+
+  &--title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &--price {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &--buyblock {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    button {
+      margin-left: 10px;
+    }
+  }
 }

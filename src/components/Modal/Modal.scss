@@ -2,11 +2,16 @@
 	position: absolute;
 	top: 70px;
 	right: 150px;
-	width: 400px;
+	max-width: 400px;
 	background-color: #000;
 	border-radius: 15px;
 	z-index: 1;
 	overflow: auto;
+
+	@media (max-width: 400px) {
+		right: 0;
+
+	}
    h3{
       display: flex;
       justify-content: center;

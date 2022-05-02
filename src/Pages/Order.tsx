@@ -29,7 +29,7 @@ const Order = () => {
 					))}
 					<div className='order_controller'>
 						<h1>Итог: {totalPrice} Р</h1>
-						<Link to='/'>
+						<Link to='/success_buy'>
 							<Button className={"primary"} onClick={handleBuy}>
 								Купить
 							</Button>
