@@ -4,7 +4,7 @@ ______
 
 This project was created for test Redux toolkit.
 
-#Stack:
+Stack:
 * React
 * Redux Toolkit
 * TypeScript
