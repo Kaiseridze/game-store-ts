@@ -36,10 +36,10 @@ const GameItem: FC<IGameItems> = ({ image, price, title, genres, game }) => {
 	}
 	return (
 		<div className='game_item'>
-				<div
+				<img
 					onClick={toGamePage}
 					className='game_item--cover'
-					style={{ backgroundImage: `url(${image})` }}
+					src={image}
 				/>
 			<div className='game_item--details'>
 				<h2 className='game_item--title'>{title}</h2>
